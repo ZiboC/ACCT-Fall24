@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: Migrating Simulation</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Project 2: Migrating Simulation</h1>
+    </header>
+    
+    <main>
+        <section class="outcomes">
+            <article>
+                <h2>Project Overview</h2>
+                <p>This project is a dynamic simulation of bird migration patterns implemented using the p5.js library. It models how birds migrate between different locations on a map in response to seasonal changes and temperature fluctuations. The simulation mimics real-world bird behaviors by incorporating independent seasonal cycles for each location, temperature variations, and migration triggers based on environmental conditions.</p>
+            </article>
+
+            <article>
+                <h2>Key Features</h2>
+                <ul>
+                    <li><strong>Multiple Locations:</strong> Each location has its own season, temperature, and weather, changing independently to reflect real-world diversity. Seasons cycle through Spring, Summer, Autumn, and Winter at different intervals per location.</li>
+                    <li><strong>Bird Population:</strong> Birds are initialized at each location with individual movement behaviors. They wander locally but monitor environmental conditions to decide when to migrate.</li>
+                    <li><strong>Migration Behavior:</strong> Birds migrate when the temperature drops below 0°C and the season is Winter. They disperse to various suitable locations (temperature above 0°C and season not Winter) rather than all moving to a single spot. Migration destinations are randomly assigned among the suitable locations.</li>
+                    <li><strong>Visual Representation:</strong> A map serves as the background to provide geographical context. Birds are depicted using images that rotate to indicate movement direction. UI elements are positioned to avoid overlap, enhancing readability.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>First Draft</h2>
+                <p>In my first draft, I created a bird migration simulation on a map where birds move between different locations based on weather and temperature. Several locations are initialized on the map, each with adjustable weather and temperature controls. Birds are randomly placed at these locations and will migrate to a new, warmer, and sunnier location if their current environment becomes too cold or snowy. The simulation updates in real-time, showing bird movement and environmental changes.</p>
+                <img src="1.1.GIF" alt="First Draft GIF">
+
+                <h2>Script and Documentation</h2>
+                <div class="image-gallery">
+                    <img src="1.1.png" alt="Script Image 1">
+                    <img src="1.2.png" alt="Script Image 2">
+                    <img src="1.3.png" alt="Script Image 3">
+                    <img src="1.4.png" alt="Script Image 4">
+                    <img src="1.5.png" alt="Script Image 5">
+                    <img src="1.6.png" alt="Script Image 6">
+                    <img src="1.7.png" alt="Script Image 7">
+                </div>
+            </article>
+
+            <article>
+                <h2>Second Draft</h2>
+                <p>The updated simulation now runs autonomously, with birds migrating based on real-time environmental factors like temperature and season. Each location experiences dynamic seasons and temperature fluctuations, triggering migration when necessary. Birds are visually represented using images, and they automatically migrate to warmer locations when conditions worsen.</p>
+                <img src="1.2.GIF" alt="Second Draft GIF">
+
+                <h2>Script and Documentation</h2>
+                <div class="image-gallery">
+                    <img src="2.1.png" alt="Script Image 8">
+                    <img src="2.2.png" alt="Script Image 9">
+                    <img src="2.3.png" alt="Script Image 10">
+                    <img src="2.4.png" alt="Script Image 11">
+                    <img src="2.5.png" alt="Script Image 12">
+                    <img src="2.6.png" alt="Script Image 13">
+                    <img src="2.7.png" alt="Script Image 14">
+                    <img src="2.8.png" alt="Script Image 15">
+                    <img src="2.9.png" alt="Script Image 16">
+                    <img src="2.10.png" alt="Script Image 17">
+                </div>
+            </article>
+
+            <article>
+                <h2>Final Draft</h2>
+                <p>The final version of the simulation adds updates like a custom font for the UI, making the text more polished. UI elements are now positioned to avoid overlap, and seasons change more smoothly, with birds now facing the direction they’re moving. Overall, the final version tightens everything up and makes the simulation visually refined.</p>
+                
+                <!-- Embedded YouTube Video -->
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/dFPxZ-sLCwQ" 
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+
+                <h2>Script and Documentation</h2>
+                <div class="image-gallery">
+                    <img src="3.1.png" alt="Script Image 18">
+                    <img src="3.2.png" alt="Script Image 19">
+                    <img src="3.3.png" alt="Script Image 20">
+                    <img src="3.4.png" alt="Script Image 21">
+                    <img src="3.5.png" alt="Script Image 22">
+                    <img src="3.6.png" alt="Script Image 23">
+                    <img src="3.7.png" alt="Script Image 24">
+                    <img src="3.8.png" alt="Script Image 25">
+                    <img src="3.9.png" alt="Script Image 26">
+                    <img src="3.10.png" alt="Script Image 27">
+                    <img src="3.11.png" alt="Script Image 28">
+                    <img src="3.12.png" alt="Script Image 29">
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

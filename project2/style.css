@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section.outcomes {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Article Styles */
+article {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    color: #4CAF50;
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+article p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+article ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+article a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+
+/* YouTube Video Button */
+.youtube-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 20px 0;
+    background-color: #FF0000;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.youtube-button:hover {
+    background-color: #CC0000;
+    transform: translateY(-2px);
+}
+
+/* Enlarged Image Styles */
+article img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Image Galleries */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    article {
+        padding: 30px;
+    }
+
+    article h2 {
+        font-size: 1.8rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+
+    /* Adjust image sizes for smaller screens */
+    article img {
+        max-width: 100%;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
